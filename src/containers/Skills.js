@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { useHistory } from 'react-router-dom'
 
 function Skills() {
+    const history = useHistory();
     return (
         <div className="body__skills">
             <div className="skills__container">
@@ -9,21 +11,21 @@ function Skills() {
                     <div className="itemSkill">
                         <span className="span__card">This website</span>
                         <div className="cardSkill">
-                            <img src="/images/html5.png" className="imgCard" alt="skills_hmtl5" />
+                            <img src="/images/html5circle.png" className="imgCard" alt="skills_hmtl5" />
                         </div>
                         <div className="showCardTitle"><p>HTML</p></div>
                     </div>
                     <div className="itemSkill" >
                         <span className="span__card">This website</span>
                         <div className="cardSkill">
-                            <img src="/images/css.png" className="imgCard" alt="skills_css" />
+                            <img src="/images/csscircle.png" className="imgCard" alt="skills_css" />
                         </div>
                         <div className="showCardTitle"><p>CSS</p></div>
                     </div>
                     <div className="itemSkill">
                         <span className="span__card">This website</span>
                         <div className="cardSkill">
-                            <img src="/images/js.png" className="imgCard" alt="skills_js"  />
+                            <img src="/images/jscircle.png" className="imgCard" alt="skills_js"  />
                         </div>
                         <div className="showCardTitle"><p>JavaScript</p></div>
                     </div>
@@ -108,7 +110,7 @@ function Skills() {
                         <div className="showCardTitle"><p>PageSpeed</p></div>
                     </div>
                 </div>
-                
+                <a onClick={()=> history.push("/skills")}>more skills & details</a>
             </div>
         </div>
     )

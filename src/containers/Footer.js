@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className="body__footer">
             <div className="footer__container">
-                <p>Download this portafolio for free <br></br> <GitHubIcon /></p>
+            <a href="https://github.com/kinlly/portafolio" target="_blank" rel="noopener noreferrer"><p>Download portafolio <br></br> <GitHubIcon /></p></a>
             </div>
         </div>
     )
