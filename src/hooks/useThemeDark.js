@@ -40,16 +40,15 @@ function useThemeDark() {
         
 
         if (mode === "dark") {
-            elementApp  != null ? elementApp.classList.add("dark-mode"): console.log("elementApp does not exist") ;
-            elementApp2 != null ? elementApp2.classList.add("toggle-dark-theme"): console.log("elementApp2 does not exist") ;
-            elementApp3 != null ? elementApp3.classList.add("dark-font"): console.log("elementApp3 does not exist") ;
-            elementApp4 != null ? elementApp4.classList.add("dark-font"): console.log("elementApp4 does not exist") ;
-            elementApp5 != null ? elementApp5.classList.add("dark-font"): console.log("elementApp5 does not exist") ;
-            elementApp6 != null ? elementApp6.classList.add("dark-font"): console.log("elementApp6 does not exist") ;
-            elementApp8 != null ? elementApp8.classList.add("dark-font"): console.log("elementApp8 does not exist") ;
-            elementApp7 != null ? elementApp7.classList.add("dark-cover"): console.log("elementApp7 does not exist") ;
-            elementApp9 != null ? elementApp9.classList.add("dark-font"): console.log("elementApp9 does not exist") ;
-
+            if (elementApp  != null ){elementApp.classList.add("dark-mode")}
+            if (elementApp2 != null ){ elementApp2.classList.add("toggle-dark-theme")}
+            if (elementApp3 != null ){ elementApp3.classList.add("dark-font")}
+            if (elementApp4 != null ){ elementApp4.classList.add("dark-font")}
+            if (elementApp5 != null ){ elementApp5.classList.add("dark-font")}
+            if (elementApp6 != null ){ elementApp6.classList.add("dark-font")}
+            if (elementApp8 != null ){ elementApp8.classList.add("dark-font")}
+            if (elementApp7 != null ){ elementApp7.classList.add("dark-cover")}
+            if (elementApp9 != null ){ elementApp9.classList.add("dark-font")}
             localStorage.setItem("mode", "dark");
             dispatch(
                 modeSelected({
@@ -57,16 +56,16 @@ function useThemeDark() {
                     day: "dark-today",
                 })
             )
-        } else {
-            elementApp   != null ? elementApp.classList.remove("dark-mode"): console.log("elementApp does not exist") ;
-            elementApp2  != null ? elementApp2.classList.remove("toggle-dark-theme"): console.log("elementApp2 does not exist") ;
-            elementApp3  != null ? elementApp3.classList.remove("dark-font"): console.log("elementApp3 does not exist") ;
-            elementApp4  != null ? elementApp4.classList.remove("dark-font"): console.log("elementApp4 does not exist") ;
-            elementApp5  != null ? elementApp5.classList.remove("dark-font"): console.log("elementApp5 does not exist") ;
-            elementApp6  != null ? elementApp6.classList.remove("dark-font"): console.log("elementApp6 does not exist") ;
-            elementApp8  != null ? elementApp8.classList.remove("dark-font"): console.log("elementApp8 does not exist") ;
-            elementApp7  != null ? elementApp7.classList.remove("dark-cover"): console.log("elementApp7 does not exist") ;
-            elementApp9  != null ? elementApp9.classList.remove("dark-font"): console.log("elementApp9 does not exist") ;
+        } else { 
+            if (elementApp  != null ){elementApp.classList.remove("dark-mode")}
+            if (elementApp2 != null ){ elementApp2.classList.remove("toggle-dark-theme")}
+            if (elementApp3 != null ){ elementApp3.classList.remove("dark-font")}
+            if (elementApp4 != null ){ elementApp4.classList.remove("dark-font")}
+            if (elementApp5 != null ){ elementApp5.classList.remove("dark-font")}
+            if (elementApp6 != null ){ elementApp6.classList.remove("dark-font")}
+            if (elementApp8 != null ){ elementApp8.classList.remove("dark-font")}
+            if (elementApp7 != null ){ elementApp7.classList.remove("dark-cover")}
+            if (elementApp9 != null ){ elementApp9.classList.remove("dark-font")}
             localStorage.setItem("mode", "light");
             dispatch(
                 modeSelected({

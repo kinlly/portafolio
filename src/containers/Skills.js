@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import Example from './Popup';
 import { motion } from "framer-motion"
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 

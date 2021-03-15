@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
-import Scrollbar from 'smooth-scrollbar';
 
 function ScrollToTop({ history }) {
   

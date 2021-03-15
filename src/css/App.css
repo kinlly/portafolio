@@ -380,6 +380,10 @@
   max-width: 1100px;
 }
 
+.projects__container > .motion > h2 {
+  padding-bottom: 20px;
+}
+
 .projectsSkill {
   padding: 10px;
   min-height: 110px;
@@ -994,6 +998,47 @@
     padding-left: 0px;
     font-size: 32px;
   }
+  .itemSkill, .projectsSkill, .experienceSkill, .extrasSkill, .body__footer>.footer__container>p {
+    padding: 10px;
+  }
+  .skills__container > a{
+    padding-right: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .skills__container > a{
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .skills__container  > h2 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .body__skills{
+    padding-bottom: 40px;
+    padding-top: 0px;
+  }
+  .body__experience{
+    padding-bottom: 120px;
+  }
+  .body__projects{
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+  .projects__container > .motion > h2{
+    padding-bottom: 30px;
+  }
+  .experience__container > .motion > h2 {
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  .extras__container > .motion > h2 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .body__extras{
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 354px) {
@@ -1002,6 +1047,9 @@
     width: 92%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .itemSkill, .projectsSkill, .experienceSkill, .extrasSkill, .body__footer>.footer__container>p {
+    padding: 10px;
   }
 }
 

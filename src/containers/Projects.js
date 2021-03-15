@@ -1,6 +1,4 @@
-import { motion, useAnimation } from 'framer-motion'
-import React, { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer';
+import React from 'react'
 import FadeInWhenVisible from '../hooks/useFadeInWhenVisible';
 
 
