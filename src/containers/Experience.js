@@ -1,10 +1,11 @@
 import React from 'react'
+import FadeInWhenVisible from '../hooks/useFadeInWhenVisible';
 
 function Experience() {
     return (
         <div className="body__experience">
             <div className="experience__container">
-                <h2>Experience</h2>
+                <FadeInWhenVisible><h2>Experience</h2></FadeInWhenVisible>
                 <div className="experience__skills">
                     <div className="experienceSkill">
                         <div className="cardExperience">
