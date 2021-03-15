@@ -6,11 +6,10 @@ function ScrollToTop({ history }) {
   
   useEffect(() => {
     const unlisten = history.listen(() => {
-      const scrollbar = Scrollbar.init(document.querySelector('#my-scrollbar'),{
-        'damping':0.05,
-        'renderByPixels': true
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
       });
-      scrollbar.scrollTo(0,0, 600);
     });
     return () => {
       unlisten();

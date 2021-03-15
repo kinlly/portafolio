@@ -1,11 +1,13 @@
 import React from 'react'
+import FadeInWhenVisible from '../hooks/useFadeInWhenVisible';
 
 function Extras() {
     return (
         <div className="body__extras">
             <div className="extras__container">
-                <h2>Extras</h2>
-                <div className="extras__skills">
+                <FadeInWhenVisible><h2>Extras</h2></FadeInWhenVisible>
+                    <div className="extras__skills">
+                    <FadeInWhenVisible>
                     <div className="extrasSkill">
                         <div className="cardExtras">
                             <span><p>Email Marketing</p></span>
@@ -20,7 +22,8 @@ function Extras() {
                             </div>
                         </div>
                     </div>
-                    <div className="extrasSkill" id="desk_display">
+                    </FadeInWhenVisible>
+                    <FadeInWhenVisible><div className="extrasSkill" id="desk_display">
                         <div className="cardExtras">
                             <span><p>Ingenico Flex CheckOut</p></span>
                             <img src="/images/extra_custompayment.png" alt="extras_flex"/>
@@ -34,8 +37,8 @@ function Extras() {
                                 <img src="/images/phpcircle.png" alt="extras_skill_php" />
                             </div>
                         </div>
-                    </div>
-                    <div className="extrasSkill">
+                    </div></FadeInWhenVisible>
+                    <FadeInWhenVisible><div className="extrasSkill">
                         <div className="cardExtras">
                             <span><p>Control Business Panel</p></span>
                             <img src="/images/extra_crm.png" alt="extras_crm"/>
@@ -51,7 +54,7 @@ function Extras() {
                                 <img src="/images/ajaxcircle.png" alt="extras_skill_ajax" />
                             </div>
                         </div>
-                    </div>
+                    </div></FadeInWhenVisible>
                 </div>
             </div>
         </div>
