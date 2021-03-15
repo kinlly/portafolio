@@ -12,8 +12,8 @@ function Projects() {
             <div className="projects__container">
             <FadeInWhenVisible><h2>Projects</h2></FadeInWhenVisible>     
                 <div className="projects__skills">
-                <FadeInWhenVisible> 
                     <div className="projectsSkill">
+                <FadeInWhenVisible> 
                         <div className="cardProjects">
                             <span><a href="https://netfliix-clone.web.app" target="_blank" rel="noopener noreferrer">Visit Web</a></span>
                             <img src="/images/pro_netflix.png" alt="project_netflix" />
@@ -31,10 +31,10 @@ function Projects() {
                                 <span>Training Web</span>
                             </div>
                         </div>
-                    </div>
-                    </FadeInWhenVisible>  
-                    <FadeInWhenVisible> 
+                    </FadeInWhenVisible> 
+                    </div> 
                     <div className="projectsSkill">
+                    <FadeInWhenVisible> 
                         <div className="cardProjects">
                             <span><a href="https://linkedin-clone-9e521.web.app/" target="_blank" rel="noopener noreferrer"> Visit Web </a></span>
                             <img src="/images/pro_linkedin.png" alt="project_linkedin" />
@@ -52,9 +52,10 @@ function Projects() {
                                 <span>Training Web</span>
                             </div>
                         </div>
-                    </div></FadeInWhenVisible>  
-                <FadeInWhenVisible> 
+                        </FadeInWhenVisible> 
+                    </div> 
                     <div className="projectsSkill" id="desk_display">
+                <FadeInWhenVisible> 
                         <div className="cardProjects">
                             <span><a href="https://cinderellatravels.net/tcp/" target="_blank" rel="noopener noreferrer">Visit Web</a></span>
                             <img src="/images/pro_tourist.png" alt="project_tourist" />
@@ -73,9 +74,10 @@ function Projects() {
                                 <span>RECOVER</span>
                             </div>
                         </div>
-                    </div></FadeInWhenVisible>  
-                <FadeInWhenVisible> 
+                        </FadeInWhenVisible>  
+                    </div> 
                     <div className="projectsSkill">
+                <FadeInWhenVisible>
                         <div className="cardProjects">
                             <span><a href="https://github.com/kinlly/jrp" target="_blank" rel="noopener noreferrer">Check GitHub</a></span>
                             <img src="/images/pro_japan.png" alt="project_japan" />
@@ -93,10 +95,10 @@ function Projects() {
                             <div className="productionCard">
                                 <span>RECOVER</span>
                             </div>
-                        </div>
-                    </div></FadeInWhenVisible>  
-                <FadeInWhenVisible> 
+                        </div></FadeInWhenVisible>  
+                    </div>
                     <div className="projectsSkill" id="desk_display">
+                <FadeInWhenVisible> 
                         <div className="cardProjects">
                             <span><a href="https://www.coffee-packages.com/" target="_blank" rel="noopener noreferrer">Visit Web</a></span>
                             <img src="/images/pro_coffee.png" alt="project_coffee" />
@@ -114,10 +116,10 @@ function Projects() {
                             <div className="productionCard">
                                 <span>In Production</span>
                             </div>
-                        </div>
-                    </div></FadeInWhenVisible>  
-                <FadeInWhenVisible> 
+                        </div></FadeInWhenVisible>  
+                    </div>
                     <div className="projectsSkill" id="desk_display">
+                <FadeInWhenVisible> 
                         <div className="cardProjects">
                             <span><a href="https://cinderellatravels.net/regfacil/" target="_blank" rel="noopener noreferrer">Visit Web</a></span>
                             <img src="/images/pro_registro.png" alt="project_registro" />
@@ -135,10 +137,10 @@ function Projects() {
                             <div className="productionCard">
                                 <span>RECOVER</span>
                             </div>
-                        </div>
-                    </div></FadeInWhenVisible>  
-                <FadeInWhenVisible> 
+                        </div></FadeInWhenVisible> 
+                    </div> 
                     <div className="projectsSkill">
+                <FadeInWhenVisible> 
                         <div className="cardProjects">
                             <span><a href="https://www.shop.coffee-packages.com/" target="_blank" rel="noopener noreferrer">Visit Web</a></span>
                             <img src="/images/pro_shop.png" alt="project_shop" />
@@ -156,10 +158,10 @@ function Projects() {
                             <div className="productionCard">
                                 <span>In Production</span>
                             </div>
-                        </div>
-                    </div></FadeInWhenVisible>  
-                <FadeInWhenVisible> 
+                        </div></FadeInWhenVisible>  
+                    </div>
                     <div className="projectsSkill" id="desk_display">
+                <FadeInWhenVisible> 
                         <div className="cardProjects">
                             <span><a href="https://www.ventanalderechodefamilia.com/" target="_blank" rel="noopener noreferrer">Visit Web</a></span>
                             <img src="/images/pro_libro.png" alt="project_libro" />
@@ -177,10 +179,10 @@ function Projects() {
                             <div className="productionCard">
                                 <span>In Production</span>
                             </div>
-                        </div>
-                    </div></FadeInWhenVisible>  
-                <FadeInWhenVisible> 
+                        </div></FadeInWhenVisible>  
+                    </div> 
                     <div className="projectsSkill" id="desk_display">
+                <FadeInWhenVisible>
                         <div className="cardProjects">
                             <span><a href="/">Current</a></span>
                             <img src="/images/pro_website.png" alt="project_portafolio" />
@@ -194,8 +196,8 @@ function Projects() {
                             <div className="productionCard">
                                 <span>In Production</span>
                             </div>
-                        </div>
-                    </div></FadeInWhenVisible>  
+                        </div></FadeInWhenVisible>  
+                    </div>
                 </div> 
             </div>
         </div>
