@@ -14,13 +14,11 @@ import Footer from './containers/Footer';
 import ScrollToTop from './containers/ScrollToTop';
 import { AnimatePresence } from "framer-motion";
 
-
 function App() {
   const ThemeSwitcher = useThemeDark();
 
   return (
     <div className="App">
-
       <div className="app__body">
         <Router>
           <AnimatePresence>

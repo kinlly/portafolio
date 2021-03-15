@@ -146,9 +146,9 @@ function Skills() {
                     </div>
                 </div>
                 <a onClick={() => history.push("/skills")}>more skills & details
-                        <motion.div animate={{  x: [0, -10], opacity: 1, transition: { yoyo: Infinity, ease: "easeIn" } }} >
-                            <KeyboardBackspaceIcon />
-                        </motion.div> </a>
+                    <motion.div animate={{  x: [0, -10], opacity: 1, transition: { yoyo: Infinity, ease: "easeIn" } }} >
+                        <KeyboardBackspaceIcon />
+                    </motion.div> </a>
             </div>
         </div>
     )

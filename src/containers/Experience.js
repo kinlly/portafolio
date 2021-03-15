@@ -27,8 +27,7 @@ function Experience() {
                             <div className="optionCardSKillYears">
                                 <span> 1 YEAR</span>
                             </div>
-                        </div>
-                        
+                        </div> 
                     </div>
                     <div className="experienceSkill">
                         <div className="cardExperience">

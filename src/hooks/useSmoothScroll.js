@@ -8,7 +8,6 @@ function useSmoothScroll() {
         'renderByPixels': true
       });
     scrollbar.scrollTo(0,0, 600);
-
     return (
         <></>
     )

@@ -2,9 +2,7 @@ import React from 'react';
 import {useHistory, useLocation} from "react-router-dom";
 
 function useLocationHook() {
-
   const location = useHistory();
-  console.log(location.location.pathname);
 
   return (
     <div>
@@ -14,6 +12,5 @@ function useLocationHook() {
     </div>
   );
 }
-
 
 export default useLocationHook;

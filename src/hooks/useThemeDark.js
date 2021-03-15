@@ -15,20 +15,15 @@ function useThemeDark() {
         return () => {
             window.removeEventListener("storage", setPreferedTheme);
         }
-
     }, [])
 
     const setPreferedTheme = () => {
         const _mode = localStorage.getItem("mode");
-        if (_mode === "dark") {
-            setMode("dark");
-        } else {
-            setMode("light");
-        }
+        _mode === "dark" ? setMode("dark"): setMode("light");
     }
 
     useEffect(() => {
-        var elementApp = document.getElementsByClassName("App")[0];
+        var elementApp  = document.getElementsByClassName("App")[0];
         var elementApp2 = document.getElementsByClassName("react-toggle-track")[0];
         var elementApp3 = document.getElementsByClassName("projects__container")[0];
         var elementApp4 = document.getElementsByClassName("experience__container")[0];
@@ -40,7 +35,7 @@ function useThemeDark() {
         
 
         if (mode === "dark") {
-            if (elementApp  != null ){elementApp.classList.add("dark-mode")}
+            if (elementApp  != null ){ elementApp.classList.add("dark-mode")}
             if (elementApp2 != null ){ elementApp2.classList.add("toggle-dark-theme")}
             if (elementApp3 != null ){ elementApp3.classList.add("dark-font")}
             if (elementApp4 != null ){ elementApp4.classList.add("dark-font")}
@@ -57,7 +52,7 @@ function useThemeDark() {
                 })
             )
         } else { 
-            if (elementApp  != null ){elementApp.classList.remove("dark-mode")}
+            if (elementApp  != null ){ elementApp.classList.remove("dark-mode")}
             if (elementApp2 != null ){ elementApp2.classList.remove("toggle-dark-theme")}
             if (elementApp3 != null ){ elementApp3.classList.remove("dark-font")}
             if (elementApp4 != null ){ elementApp4.classList.remove("dark-font")}
