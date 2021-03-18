@@ -328,16 +328,7 @@
   background-color: #000000c9;
   opacity: 1;
 }
-
-.itemSkill:hover .showCardExperience,
-.itemSkillDetail:hover .showCardExperience{
-  opacity: 1; 
-  color: rgb(77, 77, 7); 
-  background-color: white;
-  border-radius: 0px 0px 10px 10px;
-  top: -93px;
-  font-size: 20px;
-}
+ 
 
 .itemSkill .showCardTitle>p, 
 .itemSkillDetail .showCardTitle>p {
@@ -380,9 +371,6 @@
   max-width: 1100px;
 }
 
-.projects__container > .motion > h2 {
-  padding-bottom: 20px;
-}
 
 .projectsSkill {
   padding: 10px;

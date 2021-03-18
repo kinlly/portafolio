@@ -22,9 +22,6 @@ function Projects() {
                                     <img src="/images/reactcircle.png" alt="project_skill_react" />
                                     <img src="/images/firebase.png" alt="project_skill_firebase" />
                                 </div>
-                                <div className="productionCard">
-                                    <span>Training Web</span>
-                                </div>
                             </div>
                         </FadeInWhenVisible>
                     </div>
@@ -42,9 +39,6 @@ function Projects() {
                                     <img src="/images/jscircle.png" alt="project_skill_js" />
                                     <img src="/images/reactcircle.png" alt="project_skill_react" />
                                     <img src="/images/firebase.png" alt="project_skill_firebase" />
-                                </div>
-                                <div className="productionCard">
-                                    <span>Training Web</span>
                                 </div>
                             </div>
                         </FadeInWhenVisible>
@@ -65,9 +59,6 @@ function Projects() {
                                     <img src="/images/mysql.png" alt="project_skill_mysql" />
                                     <img src="/images/cpanelcircle.png" alt="project_skill_cpanel" />
                                 </div>
-                                <div className="productionCard">
-                                    <span>RECOVER</span>
-                                </div>
                             </div>
                         </FadeInWhenVisible>
                     </div>
@@ -86,9 +77,6 @@ function Projects() {
                                     <img src="/images/symfony.png" alt="project_skill_symfony" />
                                     <img src="/images/mysql.png" alt="project_skill_mysql" />
                                     <img src="/images/github.png" alt="project_skill_github" />
-                                </div>
-                                <div className="productionCard">
-                                    <span>RECOVER</span>
                                 </div>
                             </div>
                         </FadeInWhenVisible>
@@ -109,9 +97,6 @@ function Projects() {
                                     <img src="/images/mysql.png" alt="project_skill_mysql" />
                                     <img src="/images/awscircle.png" alt="project_skill_aws" />
                                 </div>
-                                <div className="productionCard">
-                                    <span>In Production</span>
-                                </div>
                             </div>
                         </FadeInWhenVisible>
                     </div>
@@ -130,9 +115,6 @@ function Projects() {
                                     <img src="/images/phpcircle.png" alt="project_skill_php" />
                                     <img src="/images/mysql.png" alt="project_skill_mysql" />
                                     <img src="/images/cpanelcircle.png" alt="project_skill_cpanel" />
-                                </div>
-                                <div className="productionCard">
-                                    <span>RECOVER</span>
                                 </div>
                             </div>
                         </FadeInWhenVisible>
@@ -153,9 +135,6 @@ function Projects() {
                                     <img src="/images/mysql.png" alt="project_skill_mysql" />
                                     <img src="/images/awscircle.png" alt="project_skill_aws" />
                                 </div>
-                                <div className="productionCard">
-                                    <span>In Production</span>
-                                </div>
                             </div>
                         </FadeInWhenVisible>
                     </div>
@@ -175,9 +154,6 @@ function Projects() {
                                     <img src="/images/mysql.png" alt="project_skill_mysql" />
                                     <img src="/images/awscircle.png" alt="project_skill_aws" />
                                 </div>
-                                <div className="productionCard">
-                                    <span>In Production</span>
-                                </div>
                             </div>
                         </FadeInWhenVisible>
                     </div>
@@ -192,9 +168,6 @@ function Projects() {
                                     <img src="/images/jscircle.png" alt="project_skill_js" />
                                     <img src="/images/reactcircle.png" alt="project_skill_react" />
                                     <img src="/images/firebase.png" alt="project_skill_firebase" />
-                                </div>
-                                <div className="productionCard">
-                                    <span>In Production</span>
                                 </div>
                             </div>
                         </FadeInWhenVisible>
