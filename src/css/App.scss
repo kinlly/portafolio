@@ -177,8 +177,8 @@ $base_container_width : 1100px;
   }
   
   .darker {
-    background: $primary_background_color !important;
-    color: $primary_font_color;
+    background: inherit;
+    color: inherit;
   }
   
   .dark-mode > .app__body > .darker {
@@ -913,15 +913,72 @@ $base_container_width : 1100px;
       > a {
         color: inherit;
         text-decoration: none;
+        font-size: 12px;
       }
       > span {
         font-size: 18px;
         font-weight: 700;
       }
   }
+  .backHome__body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+  .backHome__container{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    max-width: 1100px;
+    > a {
+      display: flex;
+      padding-left: 20px;
+    }
+    
+  }
 
+  .NP {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 20px;
+  }
+  .body__skillSelected > .motion > h1{
+    padding-left: 10px;
+  }
+  @media(max-width: 629px){
+    .body__skillSelected > .motion > h1{
+      padding-left: 20px;
+    }
+  }
+  @media(max-width: 765px){
+    .skillSelected__container{
+      display: block;
+    }
+    .skillSelected__left{
+      position: absolute;
+      right: 20px;
+      >img{
+        max-width: 50px;
+        max-height: 50px; 
+      }
+    }
+    .skillSelected__right {
+      >h1{
+        font-size: 35px;
+      }
+      > a{
+        font-size: 12px;
+      }
+    }
+  }
 
    //Basic responsive
+  .reverse > .MuiSvgIcon-root{
+    transform: rotate(180deg);
+  } 
 
   @media (max-width: 1200px) {
     .projects__skills, .extras__skills {

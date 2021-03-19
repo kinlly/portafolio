@@ -1,16 +1,13 @@
 import React from 'react'
 import { useHistory } from 'react-router';
 import FadeInWhenVisible from '../../hooks/useFadeInWhenVisible.js';
-import PrintCategory from '../PrintCategory.js';
-import Projects from '../Projects.js';
+import PrintCategory from '../PrintCategory.js'; 
 import { data } from './../../backend/db.js';
 
 function SkillSelected({ selectedSkill }) {
     const arraySkills = Array.from(data);
     const arraySkillsEmpty = arraySkills.filter(skill => skill.id === selectedSkill).map(filteredSkill => filteredSkill);
-    const history = useHistory();
-
-    console.log(arraySkillsEmpty);
+ 
     return (
         <div className="body__skillSelected">
             {arraySkillsEmpty.length > 0 ? (

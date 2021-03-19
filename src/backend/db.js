@@ -189,7 +189,7 @@ export const data = [
         "alt": "Logo of Mailchimp",
         "website": false,
         "experience": "★★★★✩",
-        "externalurl": "https://en.wikipedia.org/wiki/Jest_(JavaScript_framework)"
+        "externalurl": "https://en.wikipedia.org/wiki/Mailchimp"
     },{
         "id": "seo",
         "name": "SEO / SEM",
@@ -269,7 +269,7 @@ export const data = [
         "alt": "Logo of npm",
         "website": false,
         "experience": "★★★✩✩",
-        "externalurl": "https://en.wikipedia.org/wiki/CPanel"
+        "externalurl": "https://en.wikipedia.org/wiki/Npm_(software)"
     },{
         "id": "github",
         "name": "GitHub",
@@ -279,7 +279,7 @@ export const data = [
         "alt": "Logo of github",
         "website": false,
         "experience": "★★★★✩",
-        "externalurl": "https://en.wikipedia.org/wiki/CPanel"
+        "externalurl": "https://en.wikipedia.org/wiki/GitHub"
     },{
         "id": "ftp",
         "name": "Filezilla",
