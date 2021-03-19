@@ -1,0 +1,1129 @@
+$primary_font_color : #454360;
+$primary_font_color_dark : white;
+
+$primary_background_color : #f9f9ff;
+$primary_background_color_dark : #353353;
+$subprimary_background_color_dark : #202042;
+
+$shadow_color : #2020428a;
+$shadow_color_dark : #dadada;
+
+$span_tag : #ff4c60;
+$span_tag_darker : #b63442;
+
+$base_container_width : 1100px;
+
+.App {
+    color: $primary_font_color;
+    background-color: $primary_background_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .app__body {
+    width: 100%;
+  }
+  
+  .dark-mode {
+    background: $primary_background_color_dark;
+    color: $primary_font_color_dark;
+  }
+  
+  .body__modal {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .cover__title {
+    max-width: 630px;
+    padding: 60px;
+    color: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  
+    > {
+      h1 {
+        font-size: 58px;
+      }
+  
+      h2 {
+        font-size: 28px;
+      }
+    }
+  }
+  
+  .cover__options {
+    max-width: 330px;
+    margin-top: 40px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+  }
+  
+  .coverOptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: grey;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .skills__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    max-width: $base_container_width;
+  }
+  
+  .skillsDetail__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+    max-width: $base_container_width;
+  }
+  
+  .body__skills {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+    background-color: #eef;
+  }
+  
+  .body__skillsDetail {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    background-color: #eef;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .dark-mode > .app__body > {
+    .body__skills, .body__skillsDetail, .body__experience, .body__footer {
+      background: $subprimary_background_color_dark;
+    }
+  }
+  
+  .app__skills, .app__skillsDetail {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    margin-top: 10px;
+    max-width: $base_container_width;
+  }
+  
+  .cover__middleContent {
+    width: 100%;
+  }
+  
+  .skills__container > h2, .skillsDetail__container > .motion > h2, .projects__container > .motion > h2 {
+    font-size: 38px;
+    margin: 0 0 0 14px;
+    color: inherit;
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  .skills__container > a {
+    font-size: 20px;
+    color: inherit;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 20px;
+    padding-right: 10px;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    margin-left: auto;
+  
+    > div {
+      margin-left: 15px;
+    }
+  }
+  
+  .skillsDetail__container > a {
+    font-size: 22px;
+    color: inherit;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    padding-left: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .darker {
+    background: $primary_background_color !important;
+    color: $primary_font_color;
+  }
+  
+  .dark-mode > .app__body > .darker {
+    color: $primary_font_color_dark;
+    background: $primary_background_color_dark !important;
+  
+    > .skillsDetail__container > .motion > h3 {
+      color: $primary_font_color_dark;
+    }
+  }
+  
+  .skillsDetail__container > a {
+    padding-bottom: 10px;
+  
+    > svg {
+      fill: currentColor;
+      display: inline-block;
+      transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      flex-shrink: 0;
+      user-select: none;
+      width: 20px;
+      position: relative;
+      top: 4px;
+    }
+  }
+  
+  .skillDetail__back {
+    position: absolute;
+    top: 0px;
+    margin-top: 15px !important;
+  }
+  
+  .skillsDetail__container > .motion > h3 {
+    font-size: 30px;
+    margin: 0 0 0 14px;
+    color: inherit;
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  
+  .projects__container > .motion > {
+    h3 {
+      position: absolute;
+      left: 0;
+      opacity: 0.11;
+      font-size: 17rem;
+    }
+  
+    h4 {
+      position: absolute;
+      right: 0;
+      padding-top: 500px;
+      opacity: 0.11;
+      font-size: 17rem;
+    }
+  }
+  
+  .skills__container > p, .skillsDetail__container > .motion > p {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .cardSkill {
+    background-color: $primary_background_color;
+    box-shadow: 0 5px 20px 0 $shadow_color;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 5px;
+  }
+  .dark-font > .app__skills > .itemSkill > div > .cardSkill{
+    box-shadow: 0 5px 20px 0 $shadow_color_dark;
+  }
+  
+  .cardSkillDetail {
+    background-color: $primary_background_color;
+    box-shadow: 0 5px 20px 0 $shadow_color;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 15px;
+  }
+  
+  .cardSkill > img {
+    width: 100%;
+    transition: all 0.7s;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .cardSkillDetail > img {
+    width: 70px;
+    transition: all 0.7s;
+    align-items: left;
+    text-align: left;
+    border-radius: 15px;
+  }
+  
+  .cardSkill > p, .cardSkillDetail > p {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .cardSkill:hover, .cardSkillDetail:hover {
+    transition: all 0.3s;
+    z-index: 99999999;
+  }
+  
+  .showCardTitle {
+    position: relative;
+    opacity: 0;
+    padding: 5px;
+    z-index: 1000;
+    top: -75px;
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    transition: all 0.3s;
+    font-size: 15px;
+  }
+  
+  .showCardExperience {
+    position: relative;
+    opacity: 1;
+    z-index: 1000;
+    top: -100px;
+    margin-top: 21px;
+    color: $primary_font_color;
+    text-align: center;
+    font-weight: 700;
+    transition: all 0.3s;
+    font-size: 19px;
+  }
+  
+  .itemSkill, .itemSkillDetail {
+    padding: 10px;
+    max-height: 110px;
+    padding-bottom: 20px;
+  }
+  
+  .itemSkill:hover .showCardTitle, .itemSkillDetail:hover .showCardTitle {
+    transition: all 0.3s;
+    background-color: $primary_background_color_dark;
+    opacity: 1;
+  }
+  
+  .itemSkill .showCardTitle > p, .itemSkillDetail .showCardTitle > p {
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  .itemSkill:hover .showCardTitle > p, .itemSkillDetail:hover .showCardTitle > p {
+    transition: all 0.3s;
+    opacity: 1;
+    border-radius: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  
+  .body__projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 90px;
+  }
+  
+  .projects__skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    margin-top: 10px;
+    max-width: $base_container_width;
+  }
+  
+  .projects__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 35px;
+    max-width: $base_container_width;
+  }
+  
+  .projectsSkill {
+    padding: 10px;
+    min-height: 110px;
+    margin-bottom: 60px;
+  }
+  
+  .cardProjects {
+    box-shadow: 0 5px 20px 0 $shadow_color_dark;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    text-align: center;
+    padding: 10px;
+    transition: top ease 0.5s;
+    position: relative;
+    top: 0px;
+    z-index: 99999999;
+    background-color: white;
+  
+    > {
+      img {
+        width: 100%;
+        transition: all 0.7s;
+        align-items: center;
+        text-align: center;
+      }
+  
+      p {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+  
+  .body__extras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 90px;
+  }
+  
+  .extras__skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    margin-top: 10px;
+    max-width: $base_container_width;
+  }
+  
+  .extras__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 35px;
+    max-width: $base_container_width;
+  }
+  
+  .projectsExtra {
+    padding: 10px;
+    min-height: 110px;
+    margin-bottom: 60px;
+  }
+  
+  .cardExtras {
+    box-shadow: 0 5px 20px 0 $shadow_color_dark;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    text-align: center;
+    padding: 10px;
+    transition: top ease 0.5s;
+    position: relative;
+    top: 0px;
+    z-index: 99999999;
+    background-color: white;
+  }
+  
+  .extrasSkill {
+    padding: 10px;
+    min-height: 110px;
+    margin-bottom: 60px;
+  }
+  
+  .cardExtras > {
+    img {
+      width: 100%;
+      transition: all 0.7s;
+      align-items: center;
+      text-align: center;
+    }
+  
+    p {
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  .body__experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 70px;
+    background-color: white;
+  }
+  
+  .experience__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 35px;
+    max-width: $base_container_width;
+  
+    > .motion > h2 {
+      font-size: 38px;
+      margin: 0 0 0 14px;
+      color: inherit;
+      font-family: "Rubik", sans-serif;
+      font-weight: 800;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+  }
+  
+  .experience__skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    margin-top: 10px;
+    max-width: $base_container_width;
+    justify-content: space-evenly;
+  }
+  
+  .experienceSkill {
+    padding: 10px;
+    min-height: 110px;
+  }
+  
+  .cardExperience {
+    box-shadow: 0 5px 20px 0 $shadow_color_dark;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    text-align: center;
+    padding: 10px;
+    transition: top ease 0.5s;
+    position: relative;
+    top: 0px;
+    z-index: 99999999;
+    background-color: white;
+  
+    > {
+      img {
+        width: 130px;
+        transition: all 0.7s;
+        align-items: center;
+        text-align: center;
+      }
+  
+      p {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  
+    &:hover {
+      top: -10px;
+      z-index: 99999999;
+    }
+  }
+  
+  .extrasCard {
+    position: absolute;
+    bottom: -20px;
+  
+    &:hover {
+      position: absolute;
+      bottom: -20px;
+    }
+  
+    > img {
+      &:hover {
+        width: 50px;
+        transition: all 0.7s;
+      }
+  
+      width: 35px;
+      transition: all 0.7s;
+      background-color: white;
+      border-radius: 50%;
+      border: 1px solid #00000030;
+      padding: 0px;
+      margin-left: 5px;
+      box-shadow: 0 5px 20px 0 $shadow_color_dark;
+    }
+  }
+  
+  .cardExtras > {
+    span {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      margin-right: 20px;
+      background-color: $span_tag;
+      height: 40px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-radius: 0px 0px 10px 10px;
+  
+      > p {
+        color: white;
+        font-size: 18px;
+        position: relative;
+        top: 7px;
+        color: white;
+        font-weight: 800;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  
+    img {
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
+  
+  .extras__container > {
+    .motion > h2 {
+      font-size: 38px;
+      margin: 0 0 0 14px;
+      color: inherit;
+      font-family: "Rubik", sans-serif;
+      font-weight: 800;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+  
+    p {
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+  
+  .body__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: white;
+  }
+  
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 35px;
+    max-width: $base_container_width;
+    color: inherit;
+  
+    > a {
+      text-decoration: none;
+      color: $primary_font_color;
+    }
+  }
+  
+  .dark-mode > .app__body > .body__footer > .footer__container > a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer__container > a > p {
+    font-size: 24px;
+    margin: 0 0 0 5px;
+    color: inherit;
+    font-family: "Rubik", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 24px;
+  
+    > svg {
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .dark-font > {
+    h2, p {
+      color: white;
+    }
+  }
+  
+  #toggler__darkTheme {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+  }
+  
+  .react-toggle-track {
+    width: 59px;
+    height: 32px;
+  }
+  
+  .react-toggle-thumb {
+    top: 3px;
+    left: 3px;
+    width: 26px;
+    height: 26px;
+  }
+  
+  .react-toggle {
+    margin-top: 2px;
+  }
+  
+  .react-toggle-track-x, .react-toggle-track-check {
+    display: none;
+  }
+  
+  .react-toggle-track {
+    background-image: linear-gradient(to top, #a94bb9, #9b46b7, #8d42b5, #7d3eb2, #6d3ab0);
+  }
+  
+  .toggle-dark-theme {
+    background-image: linear-gradient(to right top, #fab823, #f9a315, #f68d0c, #f3770d, #ee5f13);
+  }
+  
+  .titleOptions > a > .MuiSvgIcon-root {
+    font-size: 2.5rem !important;
+    color: $primary_font_color;
+  }
+  
+  .dark-mode > .app__body > .body__modal > .cover__title > .cover__options > .titleOptions > a > svg {
+    color: white;
+  }
+  
+  .span__card {
+    background: $span_tag;
+    border-bottom-right-radius: 15px;
+    color: white;
+    font-size: 11px;
+    padding: 2px 8px;
+    position: absolute;
+    z-index: 1;
+    padding-right: 12px;
+  }
+  
+  .card__icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .cardIcon > a {
+    color: $primary_font_color;
+  
+    > .MuiSvgIcon-root {
+      font-size: 26px;
+    }
+  }
+  
+  .cardProjects > span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 20px;
+    background-color: $span_tag;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+  .productionCard {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    margin-right: 20px;
+    background-color: white;
+    height: 24px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 5px;
+    border-radius: 5px 5px 0px 0px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .cardProjects > {
+    span > a {
+      color: white;
+      font-size: 18px;
+      position: relative;
+      top: 7px;
+      text-decoration: none;
+      color: white;
+      font-weight: 800;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    img {
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
+  
+  .logoCard {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+  
+    > img {
+      width: 105px;
+      background-color: white;
+      border-radius: 10px 0px 0px 0px;
+    }
+  }
+  
+  .skillsCard {
+    position: absolute;
+    bottom: -20px;
+  
+    &:hover {
+      position: absolute;
+      bottom: -20px;
+    }
+  
+    > img {
+      &:hover {
+        width: 50px;
+        transition: all 0.7s;
+      }
+  
+      width: 35px;
+      transition: all 0.7s;
+      background-color: white;
+      border-radius: 50%;
+      border: 1px solid #00000030;
+      padding: 0px;
+      margin-left: 5px;
+      box-shadow: 0 5px 20px 0 $shadow_color;
+    }
+  }
+  
+  .heart {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    top: 2px;
+  }
+  
+  .optionCardSKill {
+    position: absolute;
+    top: 0px;
+    padding: 4px;
+    padding-left: 4px;
+    font-size: 14px;
+    font-weight: 800;
+    color: $primary_font_color;
+    background-color: #ffdada99;
+    text-align: left;
+    border-radius: 10px 0px 10px 0px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .optionCardSKillYears {
+    position: absolute;
+    bottom: 0px;
+    padding: 4px;
+    padding-right: 15px;
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+    background-color: $span_tag_darker;
+    text-align: center;
+    left: 0px;
+    border-radius: 0px 10px 0px 10px;
+  }
+  
+
+  .fullview{
+    min-height: 100vh;
+    padding-top: 0px;
+    padding-bottom: 0px; 
+  }
+
+  .body__skillSelected{
+      display:block;
+  }
+  
+  .dark-mode > .app__body > .body__skillsDetail > .skillsDetail__container > .motion > .body__skillSelected > .body__skillsDetail{
+    color: $primary_font_color_dark;
+    background-color: $subprimary_background_color_dark;
+  }
+
+  .skillSelected__container{
+      display:flex;
+      padding-bottom: 50px;
+  }
+  .skillSelected__left{
+      display: flex;
+      margin-right: auto; 
+      padding: 20px;
+      > img{
+        max-width: 200px;
+        max-height: 200px;
+        align-self: center;
+      }
+    }
+
+  
+  .skillSelected__right{
+      display: block;
+      margin-left: auto;
+      align-self: center;
+      padding: 20px;
+      >h1 {
+        font-size: 50px;
+      }
+      > p {
+        padding-bottom: 20px;
+        padding-top: 10px;
+      }
+      > a {
+        color: inherit;
+        text-decoration: none;
+      }
+      > span {
+        font-size: 18px;
+        font-weight: 700;
+      }
+  }
+
+
+   //Basic responsive
+
+  @media (max-width: 1200px) {
+    .projects__skills, .extras__skills {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .app__skills, .app__skillsDetail {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .experience__skills {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .itemSkill, .itemSkillDetail {
+      max-height: auto;
+    }
+  
+    .cardSkill > img {
+      max-width: 70px;
+    }
+  
+    #desk_display {
+      display: none;
+      visibility: hidden;
+    }
+  
+    .itemSkill, .projectsSkill, .experienceSkill, .extrasSkill, .body__footer > .footer__container > p {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  
+    .itemSkillDetail {
+      padding: 10px;
+    }
+  
+    .skills__container > h2 {
+      padding-left: 15px;
+    }
+  
+    .skillsDetail__container > .motion > {
+      h2, h3 {
+        padding-left: 15px;
+      }
+    }
+  
+    .projects__container > .motion > h2, .experience__container > .motion > h2, .extras__container > .motion > h2 {
+      padding-left: 15px;
+    }
+  
+    .body__extras, .body__projects, .body__skills, .body__skillsDetail, .body__experience {
+      padding-bottom: 20px;
+    }
+  
+    .cover__title {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+  
+    .skills__container, .skillsDetail__container, .projects__container, .extras__container {
+      margin-top: 20px;
+    }
+  
+    .skills__container > a {
+      padding-right: 40px;
+    }
+  }
+  
+  @media (max-width: 690px) {
+    .body__skillsDetail {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  
+    .skills__container > a {
+      padding-right: 40px;
+    }
+  
+    .body__skillsDetail > .skillsDetail__container > .motion > h3 {
+      text-align: center;
+      padding-bottom: 20px;
+      padding-left: 0px;
+      margin-left: 0px;
+    }
+  
+    .experience__skills, .projects__skills, .extras__skills {
+      grid-template-columns: repeat(1, 1fr);
+      width: 92%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .cover__title > {
+      h1 {
+        font-size: 32px;
+      }
+  
+      h2 {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  @media (max-width: 630px) {
+    .app__skills, .app__skillsDetail {
+      grid-template-columns: repeat(2, 1fr);
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .itemSkill {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    .skills__container > h2, .projects__container > .motion > h2, .extras__container > .motion > h2, .experience__container > .motion > h2 {
+      text-align: center;
+      margin-left: 0px;
+      padding-left: 0px;
+      font-size: 32px;
+    }
+  
+    .itemSkill, .projectsSkill, .experienceSkill, .extrasSkill, .body__footer > .footer__container > p {
+      padding: 10px;
+    }
+  
+    .skills__container > {
+      a {
+        padding-right: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+  
+      h2 {
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+    }
+  
+    .body__skills {
+      padding-bottom: 40px;
+      padding-top: 0px;
+    }
+  
+    .body__experience {
+      padding-bottom: 120px;
+    }
+  
+    .body__projects {
+      padding-top: 20px;
+      padding-bottom: 80px;
+    }
+  
+    .projects__container > .motion > h2 {
+      padding-bottom: 30px;
+    }
+  
+    .experience__container > .motion > h2 {
+      padding-bottom: 30px;
+      padding-top: 20px;
+    }
+  
+    .extras__container > .motion > h2 {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  
+    .body__extras {
+      padding-bottom: 50px;
+    }
+  }
+  
+  @media (max-width: 354px) {
+    .app__skills, .app__skillsDetail {
+      grid-template-columns: repeat(2, 1fr);
+      width: 92%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .itemSkill, .projectsSkill, .experienceSkill, .extrasSkill, .body__footer > .footer__container > p {
+      padding: 10px;
+    }
+  }
+  
+  #my-scrollbar {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+  }
+  
+  .app__body > .body__skillsDetail > .skillsDetail__container > .motion > {
+    a, h3 {
+      color: $primary_font_color;
+    }
+  }
+  
+  .dark-mode > .app__body > .body__skillsDetail > .skillsDetail__container > .motion > {
+    a, h3 {
+      color: white;
+    }
+  }
